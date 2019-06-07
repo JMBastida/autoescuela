@@ -45,7 +45,7 @@ class AuthService {
     return reportRef.setData({
       'uid': user.uid,
       'lastActivity': DateTime.now()
-    }, merge: true);
+    }, merge: true);//El merge true hara que no sobreescriba(si ya existe no lo borra y lo pone)
 
   }
 
