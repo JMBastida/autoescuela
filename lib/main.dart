@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
         StreamProvider<FirebaseUser>.value(stream: AuthService().user),
       ],
       child: MaterialApp(
+        
         // Firebase Analytics
         navigatorObservers: [
           FirebaseAnalyticsObserver(analytics: FirebaseAnalytics()),
